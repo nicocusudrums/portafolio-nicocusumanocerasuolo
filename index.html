@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nico Cusumano Cerasuolo</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Nico Cusumano Cerasuolo</h1>
+        <p>Programador Junior | Desarrollador Web</p>
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un programador junior apasionado por el desarrollo web. Tengo experiencia en HTML y CSS, y
+                actualmente me encuentro estudiando JavaScript para ampliar mis conocimientos y capacidades como
+                desarrollador frontend.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+                        class="skill-icon" />
+                    <h3>HTML</h3>
+                    <p>Experiencia sólida creando estructuras semánticas.</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
+                        class="skill-icon" />
+                    <h3>CSS</h3>
+                    <p>Estilización moderna y diseño responsive.</p>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript" class="skill-icon" />
+                    <h3>JavaScript</h3>
+                    <p>Actualmente aprendiendo y practicando.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos">
+                <a class="proyecto" href="https://nicocusudrums.github.io/proyectocuga/" target="_blank">
+                    <h3>Pagina web Cuga</h3>
+                    <p>Page básica sobre mi banda, usando solo HTML y CSS.</p>
+                </a>
+
+                <a class="proyecto" href="https://nicocusudrums.github.io/Juego-memoriamusical/" target="_blank">
+                    <h3>Juego en JavaScript</h3>
+                    <p>Un juego de memoria musical hecho, mientras aprendo, en JS.</p>
+                </a>
+
+                <a class="proyecto" href="https://tupagina.github.io/formulario-contacto" target="_blank">
+                    <h3>Formulario de contacto</h3>
+                    <p>Formulario simple con validación en HTML5.</p>
+                </a>
+            </div>
+        </section>
+
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Quieres ponerte en contacto conmigo? Completa el siguiente formulario:</p>
+            <form id="contact-form" action="https://formspree.io/f/xnnblgjw" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9+\-\s]{7,15}"
+                        placeholder="+54 9 11 1234 5678" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <!-- Campo para evitar spam -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <button type="submit">Enviar</button>
+                <p id="form-message"></p>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/nicocusudrums/?hl=en" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Nico.Cusumano.Cerasuolo" target="_blank" title="Facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/5493816855266" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/cesar-nicolas-cusumano-cerasuolo-31aa14213/" target="_blank"
+                title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/nicocusudrums" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2025 Nico Cusumano Cerasuolo - Todos los derechos reservados.</p>
+
+    </footer>
+
+    <script>
+        // Animación al cargar
+        window.addEventListener("load", () => {
+            document.querySelector("header h1").style.animation = "fadeIn 2s ease";
+        });
+    </script>
+    <!-- BOTÓN FLOTANTE CONTACTO (agregar justo antes de </body>) -->
+    <a href="mailto:nicocusumanocerasuolo@gmail.com" class="btn-flotante" aria-label="Contacto por Email">
+        ✉️
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
